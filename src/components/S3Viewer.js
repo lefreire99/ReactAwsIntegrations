@@ -3,11 +3,11 @@ import AWS from 'aws-sdk';
 import { useState } from 'react';
 
 AWS.config.update({
-    accessKeyId: '',
-    secretAccessKey: '/',
+    accessKeyId: 'ASIA6PKUP76JKWVV74TN',
+    secretAccessKey: '+ggBjBd82cUeeIqsSxJYD/H5dfJUMo5rtf/JSy/U',
     region: 'us-east-1',
-    sessionToken: ''
-  });
+    sessionToken: 'FwoGZXIvYXdzEFIaDJaURsVDp/2LhG/ASSK9Ac8bREWD3B89+VjoJPntcwEaWie/imWlBCMG4ZCEykdXzSUYmTCHIZVe0jYAZeHE+mA+JGS443z0Q2RNHC1xtaQkXymXQ7gzsKfBtujbUiQ36756Dq5Tqhuw+v35XicMdf+RpLWQDHHc+ewEAwPhdkuNpeKqtfX3aDAfQqOC0L8GMLV76q2dGmJzyenpJQF6s3S8LbJ9MSFvAVbxJbllJAWhk+t3G3Lv6O57grHgygR799PiAhZTBw69qk+LcSjtqNOjBjItT8ttfkrQE/LQtmD/EnTsXLDlFOSDqrf7TNBvEXKE3qN1l996RdjfRjCWm12n'
+});
 
 export const S3Viewer = () => {
     const [listFiles, setListFiles] = useState([]);
@@ -40,7 +40,7 @@ export const S3Viewer = () => {
     }
 
   return (
-    <div style={{marginTop: '150px', marginBottom: '150px' }}>
+    <div style={{marginTop: '150px', marginBottom: '50px' }}>
         <h1>Visualizar todos los objetos de un bucket</h1> 
         <button onClick={getFromS3}>Recargar</button>
         {(listFiles.length==0) && (
