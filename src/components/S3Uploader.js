@@ -3,11 +3,11 @@ import AWS from 'aws-sdk';
 import { useState } from 'react';
 
 AWS.config.update({
-    accessKeyId: '',
-    secretAccessKey: '+//JSy/U',
-    region: 'us-east-1',
-    sessionToken: '/2LhG/+VjoJPntcwEaWie/+mA++v35XicMdf+RpLWQDHHc+++/LQtmD/'
-  });
+  accessKeyId: '',
+  secretAccessKey: '',
+  region: 'us-east-1',
+  sessionToken: ''
+});
 
 export const S3Uploader = () => {
     const s3 = new AWS.S3();

@@ -42,3 +42,25 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
+.dynamoContainer{
+  margin-top: 20px;
+  width: 50%;
+}
+
+.dynamoContainer table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dynamoContainer th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+.dynamoContainer tr:nth-child(even){background-color: #f2f2f2; color: black;}
+
+.dynamoContainer th {
+  background-color: #04AA6D;
+  color: white;
+}

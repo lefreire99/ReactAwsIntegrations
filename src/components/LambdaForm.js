@@ -4,9 +4,9 @@ import { useState } from 'react';
 
 AWS.config.update({
     accessKeyId: '',
-    secretAccessKey: '+//JSy/U',
+    secretAccessKey: '',
     region: 'us-east-1',
-    sessionToken: '/2LhG/+VjoJPntcwEaWie/+mA++v35XicMdf++++/LQtmD/'
+    sessionToken: ''
 });
 
 export const LambdaForm = () => {
