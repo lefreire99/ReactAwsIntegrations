@@ -44,7 +44,7 @@ export const S3Viewer = () => {
         <h1>Visualizar todos los objetos de un bucket</h1> 
         <button onClick={getFromS3}>Recargar</button>
         {(listFiles.length==0) && (
-            <h3>No hay objetos que mostrar</h3> 
+            <h3>No hay objetos que mostrar :</h3> 
             )
         }
         {(listFiles.length>0)  && (
