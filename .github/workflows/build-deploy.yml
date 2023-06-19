@@ -21,12 +21,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
-      
-      - name: LS
-        run: ls
       - name: Install packages
         run: npm install
       - name: Build
         run: npm run build
+        env:
+          CI: false
       - name: Deploy
         run: aws s3 sync ./build s3://react-test-deploy-cd
