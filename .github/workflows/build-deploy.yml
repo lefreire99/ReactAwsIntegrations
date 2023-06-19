@@ -5,6 +5,12 @@ on:
     branches:
       - master
 
+env:
+          CI: false
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,10 +31,5 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-        env:
-          CI: false
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
       - name: Deploy
         run: aws s3 sync ./build s3://react-test-deploy-cd
