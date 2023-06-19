@@ -3,10 +3,10 @@ import AWS from 'aws-sdk';
 import { useState, useEffect } from 'react';
 
 AWS.config.update({
-    accessKeyId: '',
-    secretAccessKey: '',
-    region: 'us-east-1',
-    sessionToken: ''
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID ,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  region: 'us-east-1',
+  sessionToken: process.env.AWS_SESSION_TOKEN 
 });
 
 
