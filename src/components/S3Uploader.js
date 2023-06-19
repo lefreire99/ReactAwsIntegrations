@@ -3,10 +3,10 @@ import AWS from 'aws-sdk';
 import { useState } from 'react';
 
 AWS.config.update({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID ,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  accessKeyId: process.env.REACT_APP_AWS_ACCESS_KEY_ID ,
+  secretAccessKey: process.env.REACT_APP_AWS_SECRET_ACCESS_KEY,
   region: 'us-east-1',
-  sessionToken: process.env.AWS_SESSION_TOKEN
+  sessionToken: process.env.REACT_APP_AWS_SESSION_TOKEN
 });
 
 export const S3Uploader = () => {
