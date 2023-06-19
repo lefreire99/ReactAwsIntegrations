@@ -3,10 +3,10 @@ import AWS from 'aws-sdk';
 import { useState } from 'react';
 
 AWS.config.update({
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID ,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    accessKeyId: process.env.aws-access-key-id ,
+    secretAccessKey: process.env.aws-secret-access-key,
     region: 'us-east-1',
-    sessionToken: process.env.AWS_SESSION_TOKEN 
+    sessionToken: process.env.aws-session-token 
 });
 
 export const LambdaForm = () => {
