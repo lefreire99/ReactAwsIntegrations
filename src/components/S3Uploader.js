@@ -23,7 +23,7 @@ export const S3Uploader = () => {
           return;
         }
         const params = { 
-          Bucket: 's3testreact2023', 
+          Bucket: 'test-githubactions-bootcamp-xd', 
           Key: `${Date.now()}.${file.name}`, 
           Body: file 
         };
