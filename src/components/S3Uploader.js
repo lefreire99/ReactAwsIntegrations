@@ -33,7 +33,7 @@ export const S3Uploader = () => {
       }
       return (
         <div style={{ marginTop: '150px' }}>
-          <h1>Subida de archivo simple</h1>
+          <h1 style={{color: "#a90311"}}>Subida de archivo simpleROJOOOOOOO</h1>
           <input type="file" onChange={handleFileSelect} />
           {file && (
             <div style={{ marginTop: '10px' }}>
